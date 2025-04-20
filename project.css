@@ -1,0 +1,170 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+.nav-item a{
+  font-family: "Winky Sans", sans-serif;
+}
+.navbar-brand{
+  font-family: "Kanit", sans-serif;
+  font-size: 2rem;
+}
+p,span{
+  font-family: "Winky Sans", sans-serif;
+}
+h1,h2,h3,h4,h5{
+  font-family: "Kanit", sans-serif;
+}
+.Intro {
+  display: block;
+  margin: auto;
+}
+.Intro span{
+  color:#FFD700;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.Intro h1{
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 30px;
+ text-transform: uppercase;
+}
+.Intro p{
+  margin-bottom: 30px;
+  color:rgb(143, 142, 142);
+
+  /* text-transform: uppercase; */
+}
+body {
+  margin: 0;
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color:black!important;
+  -webkit-text-size-adjust: 100%;
+  /* -webkit-tap-highlight-color: transparent; */
+}
+
+.card {
+  background-color: #252525!important;
+  /* width: 300px; */
+  overflow: hidden;
+  border-radius: 0px!important;
+}
+
+.card .image-container {
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height:240px!important;
+  border-radius: 0px;
+  display: block;
+}
+
+.card .icon-box {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #c6ea00; /* neon green */
+  padding: 20px;
+}
+
+.card .icon-box i {
+  font-size: 24px;
+  color: #000;
+}
+
+.card .content {
+  padding: 15px;
+}
+.card .content a{
+align-items: center;
+  background: none;
+  border: none;
+  background: #FFD700;
+ width: 200px;
+ padding: 10px;
+
+ text-decoration: none;
+ color:black;
+ font-weight: 700;
+ font-family: "Winky Sans", sans-serif;
+}
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.6;
+  text-transform: capitalize;
+}
+.Intro .btn{
+  background: none;
+  display: block;
+  margin: auto;
+  border: none;
+  background: #FFD700;
+ width: 200px;
+ padding: 10px;
+ text-decoration: none;
+ color:black;
+ font-weight: 700;
+ font-family: "Winky Sans", sans-serif;
+}
+@media (max-width: 1000px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.projects h2{
+  color:white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .Intro h1{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .Intro p{
+    margin-bottom: 0px;
+    color:rgb(143, 142, 142);
+  
+    /* text-transform: uppercase; */
+  }
+  .card img {
+    width: 100%;
+    height:140px!important;
+  }
+  .card h2 {
+    margin-bottom: 10px;
+    font-size: 14px;
+   
+  }
+  .card p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+
+.footer{
+  padding: 10px;
+  text-align: center;
+  color:#aaa;
+}

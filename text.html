@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Santa 2023</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.6);
+      padding: 1.5rem;
+      margin: 1rem auto;
+      max-width: 600px;
+      transition: transform 0.3s ease;
+      animation: fadeInUp 0.5s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .profile img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #FFD700;
+    }
+    .profile-info {
+      flex: 1;
+    }
+    .profile-info h3 {
+      margin: 0;
+    }
+    .child {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #555;
+    }
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @media (max-width: 600px) {
+      .profile {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .card {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎁 Secret Santa 2023 🎄</h1>
+  <div id="container"></div>
+
+  <script>
+    const data = [
+      {
+        name: "Hamish Murray",
+        email: "hamish.murray@acme.com",
+        child: "Benjamin Collins",
+        childEmail: "benjamin.collins@acme.com"
+      },
+      {
+        name: "Layla Graham",
+        email: "layla.graham@acme.com",
+        child: "Piper Stewart",
+        childEmail: "piper.stewart@acme.com"
+      },
+      {
+        name: "Matthew King",
+        email: "matthew.king@acme.com",
+        child: "Spencer Allen",
+        childEmail: "spencer.allen@acme.com"
+      },
+      // Add the rest here...
+    ];
+
+    const container = document.getElementById("container");
+
+    data.forEach(entry => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+        <div class="profile">
+          <img src="https://via.placeholder.com/60" alt="Profile Pic">
+          <div class="profile-info">
+            <h3>${entry.name}</h3>
+            <p>${entry.email}</p>
+          </div>
+        </div>
+        <p class="child">🎅 Secret Child: ${entry.child} <br> 📧 ${entry.childEmail}</p>
+      `;
+      container.appendChild(card);
+    });
+  </script>
+</body>
+</html>
